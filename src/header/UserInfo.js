@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import TextField from "./TextField";
 import Skills from "./Skills";
 import SkillInput from "./SkillInput";

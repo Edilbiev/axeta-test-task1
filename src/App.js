@@ -3,10 +3,10 @@ import Blocks from "./main/Blocks";
 
 function App() {
   return (
-    <>
+    <div className="app">
       <Header />
       <Blocks />
-    </>
+    </div>
   );
 }
 

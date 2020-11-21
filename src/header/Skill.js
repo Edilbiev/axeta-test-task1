@@ -1,4 +1,3 @@
-import React from "react";
 import cancelIcon from "../assets/cancelRed.svg";
 
 function Skill({ level, name, id, deleteSkill }) {

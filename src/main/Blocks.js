@@ -1,4 +1,3 @@
-import React from "react";
 import CodeSamples from "./CodeSamples";
 import SplittedBlock from "./SplittedBlock";
 import QuoteBlock from "./QuoteBlock";
@@ -74,10 +73,10 @@ function Blocks() {
       <div className="row">
         {quotes.map((item) => {
           return (
-            <Block>
+            <Block key={item.id}>
               <BlockTitle>{item.title}</BlockTitle>
               {item.quote && (
-                <QuoteBlock key={item.id} author={item.author}>
+                <QuoteBlock author={item.author}>
                   {item.quote}
                 </QuoteBlock>
               )}

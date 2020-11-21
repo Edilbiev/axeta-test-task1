@@ -4,6 +4,11 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.app {
+  max-width: 1920px;
+  margin: auto;
+}
+
 input {
   background-color: inherit;
   border: none;
@@ -22,6 +27,7 @@ button {
 }
 
 blockquote {
+  margin: 10px;
   position: relative;
   font-style: italic;
   font-family: initial;
@@ -33,12 +39,12 @@ blockquote:before {
   display: block;
   font-size: 7em;
   position: absolute;
-  bottom: 0;
   /*opacity: 0.1;
   Вместо opacity задаем цвет через rgba для кроссбраузерности
   */
   color: rgba(0, 0, 0, .1);
-  line-height: 1.5em;
+  line-height: 0;
+  left: 0;
 }
 
 blockquote:after {
@@ -46,6 +52,7 @@ blockquote:after {
   font-size: 7em;
   position: absolute;
   color: rgba(0, 0, 0, .1);
+  right: 0;
 }
 
 .refactor-buttons {
@@ -149,6 +156,7 @@ blockquote:after {
 .avatar img {
   width: 100%;
   height: 100%;
+  min-width: 200px;
 }
 
 .user-info {
@@ -160,6 +168,7 @@ blockquote:after {
 }
 
 .print-button-inner {
+  min-width: 200px;
   padding: 20px;
 }
 
@@ -180,8 +189,10 @@ main {
   border-bottom: none;
 }
 
-.block {
+.col {
+  position: relative;
   flex: 1;
+  min-width: 200px;
   border-bottom: 1px solid rgb(230, 230, 230);
   border-right: 1px solid rgb(230, 230, 230);
 }
@@ -190,7 +201,7 @@ main {
   border-right: none;
 }
 
-.block-inner {
+.quote-block {
   box-sizing: border-box;
   padding: 10px;
 }
@@ -206,7 +217,7 @@ main {
 
 .block-title {
   background-color: white;
-  opacity: 0.7;
+  opacity: .9;
   height: 40px;
   text-align: center;
   font-weight: bold;
@@ -219,18 +230,12 @@ main {
   font-size: initial;
 }
 
-.code-sample-title {
-  padding: 10px;
-  text-align: center;
-  background-color: white;
-  opacity: 0.7;
-}
-
 .splitted-block {
   text-align: center;
 }
 
 .splitted-block-half {
+  opacity: .9;
   padding: 10px;
   border-bottom: 1px solid rgb(230, 230, 230);
 }

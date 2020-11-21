@@ -1,7 +1,5 @@
-import React from "react";
-
 function Block({ children }) {
-  return <section className="block">{children}</section>;
+  return <section className="col">{children}</section>;
 }
 
 export default Block;

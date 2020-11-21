@@ -1,11 +1,9 @@
-import React from "react";
 import icon from "../assets/confirmGrey.svg";
 
 function SkillInput({
   skillInputValue,
   onInputValueChange,
   addNewSkill,
-  deleteSkill,
   isShowed,
   showInput,
   skillLevel,
@@ -29,7 +27,7 @@ function SkillInput({
           <option value="light">Light</option>
         </select>
         <button onClick={addNewSkill}>
-          <img src={icon} />
+          <img src={icon} alt="icon"/>
         </button>
       </div>
     </div>
