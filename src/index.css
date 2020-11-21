@@ -1,13 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Roboto", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+input {
+  background-color: inherit;
+  border: none;
+  color: black;
+  outline: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+blockquote {
+  position: relative;
+  font-style: italic;
+  font-family: initial;
+  quotes: "“" "”" "‘" "’";
+}
+
+blockquote:before {
+  content: open-quote;
+  display: block;
+  font-size: 7em;
+  position: absolute;
+  bottom: 0;
+  /*opacity: 0.1;
+  Вместо opacity задаем цвет через rgba для кроссбраузерности
+  */
+  color: rgba(0, 0, 0, .1);
+  line-height: 1.5em;
+}
+
+blockquote:after {
+  content: close-quote;
+  font-size: 7em;
+  position: absolute;
+  color: rgba(0, 0, 0, .1);
+}
+
+.refactor-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 40px;
+}
+
+.header {
+  display: flex;
+  background-color: rgb(230, 230, 230);
+}
+
+.text-field-input-large {
+  font-size: 2em;
+}
+
+.text-field-input-small {
+  font-size: 1em;
+}
+
+.text-field-input-small[value] {
+  color: rgb(86 86 86);
+}
+
+.text-field-disabled {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  border: 1px solid rgb(230, 230, 230);
+  padding: 5px;
+}
+
+.text-field {
+  background-color: white;
+  border: 1px solid grey;
+}
+
+.skills {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.skill-outer {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.skill {
+  border-radius: 1px;
+  color: white;
+  display: inline-block;
+  padding: 5px;
+}
+
+.strong-skill {
+  background-color: black;
+}
+
+.medium-skill {
+  background-color: rgb(92, 92, 92);
+}
+
+.light-skill {
+  background-color: rgb(162, 162, 162);
+}
+
+.skill-delete-button {
+  margin-left: -16px;
+  display: none;
+}
+
+.skill-outer:hover .skill-delete-button {
+  display: block;
+}
+
+.skill-input {
+  width: 50%;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border: 1px solid rgb(117, 250, 76);
+}
+
+.skill-input input, .avatar, .print-button, .text-field input {
+  flex: 1;
+}
+
+.skill-input div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill-input button {
+  margin-left: 5px;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+}
+
+.user-info {
+  flex: 2;
+}
+
+.user-info-inner {
+  padding: 20px;
+}
+
+.print-button-inner {
+  padding: 20px;
+}
+
+.print-button button {
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  margin-left: auto;
+  border-radius: 12px;
+}
+
+.row {
+  display: flex;
+}
+
+main {
+  border: 1px solid rgb(230, 230, 230);
+  border-bottom: none;
+}
+
+.block {
+  flex: 1;
+  border-bottom: 1px solid rgb(230, 230, 230);
+  border-right: 1px solid rgb(230, 230, 230);
+}
+
+.row :last-child {
+  border-right: none;
+}
+
+.block-inner {
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.quote-author {
+  text-align: right;
+}
+
+.code-sample {
+  height: 100%;
+  background: url("assets/php-code.png");
+}
+
+.block-title {
+  background-color: white;
+  opacity: 0.7;
+  height: 40px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 20px;
+}
+
+.block-subtitle {
+  font-weight: lighter;
+  font-size: initial;
+}
+
+.code-sample-title {
+  padding: 10px;
+  text-align: center;
+  background-color: white;
+  opacity: 0.7;
+}
+
+.splitted-block {
+  text-align: center;
+}
+
+.splitted-block-half {
+  padding: 10px;
+  border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.splitted-block :last-child {
+  border: none;
 }
