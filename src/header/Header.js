@@ -1,16 +1,13 @@
 import UserInfo from "./UserInfo";
 import Avatar from "./Avatar";
+import PagePrinter from "./PagePrinter";
 
 function Header() {
   return (
     <header className="header">
       <Avatar />
       <UserInfo />
-      <div className="print-button">
-        <div className="print-button-inner">
-          <button>PRINT THIS PAGE</button>
-        </div>
-      </div>
+      <PagePrinter />
     </header>
   );
 }
