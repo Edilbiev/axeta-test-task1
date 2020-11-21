@@ -29,7 +29,7 @@ button {
 blockquote {
   margin: 10px;
   font-style: italic;
-  font-family: initial;
+  font-family: "Times New Roman";
   quotes: "“" "”" "‘" "’";
 }
 
@@ -243,7 +243,7 @@ main {
   border: none;
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 768px) {
   header, .row {
     flex-direction: column;
   }
@@ -254,6 +254,10 @@ main {
 
   .skill-input {
     width: 100%;
+  }
+
+  .text-field-input-large {
+    font-size: 1.6em;
   }
 }
 
