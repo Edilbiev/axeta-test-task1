@@ -4,3 +4,5 @@
 #### `cd axeta-test-task1`
 #### `npm install`
 #### `npm start`
+---
+[Демо](https://edilbiev.github.io/axeta-test1/)
